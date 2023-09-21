@@ -1,0 +1,169 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Navbar */
+
+.nav {
+  position: static;
+  height: 69px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+}
+
+.nav img {
+  height: 50px;
+  margin: 0 0 0 10px;
+}
+
+.nav ul {
+  scroll-behavior: smooth;
+}
+
+.nav li {
+  display: inline;
+  padding: 0 20px 0 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: seashell;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 680px) {
+  .nav {
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+  }
+
+  .nav .logo {
+    flex-grow: 0;
+  }
+}
+
+/* Mission */
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background: url('images/img-mission-background.jpeg') center center no-repeat;
+  background-size: 90%;
+}
+
+.mission-text {
+  background-color: black;
+  width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+  .mission {
+    height: 600px;
+  }
+  .mission-text {
+    height: auto;
+    font-size: 16px !important;
+  }
+}
+
+/* Tea */
+.tea {
+  padding: 300px 0 0 0;
+}
+
+.tea .tea-text {
+  background-size: 1000px;
+}
+
+.tea-img {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.img-item img {
+  width: 300px;
+  height: 200px;
+  margin: 0 0 10px 0;
+}
+
+/* Locations */
+.locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background: url('images/img-locations-background.jpeg') center center no-repeat;
+  background-size: 90%;
+  margin: 300px 0 0 0;
+}
+
+.locations-text h2 {
+  padding: 0 0 15px 0;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.box {
+  width: 300px;
+  height: 100%;
+  background-color: black;
+  margin: 0 40px 0 0;
+}
+
+@media only screen and (max-width: 680px){
+  .boxes {
+    flex-direction: column;
+    padding: 0 5% 0 5%;
+  }
+}
+
+/* Contact */
+.contact-text {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 0 0;
+}
+
+/* Copyright */
+.copyright h5 {
+  padding: 0 0 0 20px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 680px) {
+  .copyright h5 {
+    text-align: center;
+  }
+}
